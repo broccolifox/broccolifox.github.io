@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/life.css"/>
+		<link rel="stylesheet" href="css/animate.min.css"/>
+	</head>
+	<body>
+		
+		<div id="tou1">
+			<div id="tou2" class=" animate__animated animate__bounce"> <p><font size="20px">HELLO</font> </p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="10px">I'm</font> <font size="20px">XIAO YANG</font></p>
+			<p>俺是泸州的小老铁</p>
+			<div id="tou3"><a href="index.html"><font color="white">查看首页更多信息>>></font></a></div>
+			</div>
+		</div>
+          <div id="banner">
+			  <ul id="imglist">
+				  <li><img src="img/艺术照1.png" alt=""/></li>
+				  <li><img src="img/艺术照2.png" alt=""/></li>
+				  <li><img src="img/艺术照3.png" alt=""/></li>
+				  <li><img src="img/艺术照1.png" alt=""/></li>
+			  </ul>
+			  <ul id="icolist">
+				  
+				  <li>1</li>
+				  <li>2</li>
+				  <li>3</li>
+			  </ul>
+			  <div class="prev">《</div>
+			  <div class="next">》</div>
+		  </div>
+		  
+		  <script>
+			  var eprev = document.querySelector('.prev');
+			  var enext = document.querySelector('.next');
+			  var esico = document.getElementById('icolist').getElementsByTagName('li');
+			  var eicolist = document.querySelector('#icolist');
+			  var eimglist = document.querySelector('#imglist');
+			  var left = 0;
+			  var timer;
+			  run();
+			  function run(){
+				  if(left <= -2400){
+					  left = 0;
+				  }
+				  var m = Math.floor(-left / 800);
+				  imglist.style.marginLeft = left + 'px';
+				  var n = (left % 800 == 0) ? n = 1400 : n = 10;
+				  left -=10;
+				  timer = setTimeout(run,n);
+				  icochange(m);
+			  }
+			  function imgchange(n){
+				  let lt = - (n * 800);
+				  imglist.style.marginLeft = lt + 'px';
+				  left = lt;
+			  }
+			  eprev.onclick = function(){
+				  let prevgo = Math.floor(-left / 800) -1;
+				  if(prevgo == -1){
+					  prevgo = 3;
+				  }
+				  imgchange(prevgo);
+			  }
+			 enext.onclick = function(){
+				let nextgo = Math.floor(-left / 800) +1;
+				if(nextgo == 3){
+					nextgo = 0;
+				}
+				imgchange(nextgo);
+			 }
+			 function icochange(m){
+				 for(let index = 0;index < esico.length; index++){
+					 esico[index].style.backgroundColor = '';
+				 }
+				 if(m < esico.length){
+					 esico[m].style.backgroundColor = 'red';
+				 }
+			 }
+			 eicolist.onclick = function(){
+				 var tg = event.target;
+				 let ico = tg.innerHTML - 1;
+				 imgchange(ico);
+				 icochange(ico);
+			 }
+			 eimglist.onmouseover = function (){
+				 clearTimeout(timer);
+			 }
+			 eimglist.onmouseout = function (){
+			 		run();
+			 }
+		  </script>
+	    
+	     <div class="life1">
+	     			  
+	     			  <div class="life2"><font size="10px">Life and travel</font> </div>
+	     			  <div class="life3"></div>
+	     			  <div class="parentbjtp">
+						 <div class="parent">
+							 <div class="tu1"><img src="img/北盘江.jpg" width="200px" height="130px"/><br>在北盘江</div>
+							 <div class="tu1"><img src="img/遵义会议.jpg" width="200px" height="130px"/><br>在遵义会议</div>
+							 <div class="tu1"><img src="img/熊猫基地.jpg" width="200px" height="130px"/><br>在熊猫基地</div>
+						 </div>
+						  <div  class="parent">
+							  <div class="tu2"><img src="img/奋斗日子.jpg" width="200px" height="130px"/><br>奋斗的时光</div>
+							  <div class="tu2"><img src="img/家乡夕阳.jpg" width="200px" height="130px"/><br>家乡的夕阳</div>
+							  <div class="tu2"><img src="img/鱼嘴滑翔.jpg" width="200px" height="130px"/><br>鱼嘴滑翔</div>
+						  </div>
+					  </div>
+	     </div>
+	    </div>
+		<div class="life4">
+			<div class="life2"  class=" animate__animated animate__bounce"><font size="10px">ABOUT HOBBIES</font> </div>
+			<div class="life3"></div><br>
+			<div>
+				<div class="life5"><img src="img/骑行.jpg" width="200px" height="150px"/></div>
+				<div class="life6">
+					<div class="life9"><img src="img/右三角形.png" width="15px" height="15px"/>骑行</div>
+					<div class="life11"></div>
+					<div class="life10">我不知道将要去何方，但我已在路上。是雄鹰就该展翅翱翔，只有经历地狱的磨练才能拥有创造天堂的力量。
+					我们不会轻言放弃，是水手就要搏击风浪，是雄鹰就要展翅飞翔。其实你只需要有一颗勇于走出去的心就够了。</div>
+				</div>
+			</div>
+			<div>
+				<div class="life7"><img src="img/阅读.jpg" width="200px" height="150px"/></div>
+				<div class="life8">
+					<div class="life12">阅读<img src="img/左三角形.png" width="15px" height="15px"/></div>
+					<div class="life11"></div>
+					<div class="life10">书籍是人类知识的总结，书籍是全世界的营养品。读书而不思考等于吃饭而不消化生活在我们这个世界里，不读书就完全不可能
+					了解人。要学会读书，当我们第一遍读一本好书的时候，我们仿佛找到了一个老朋友。</div>
+				</div>
+			</div>
+			<div>
+				<div class="life5"><img src="img/羽毛球.jpg" width="200px" height="150px"/></div>
+				<div class="life6">
+					<div class="life9"><img src="img/右三角形.png" width="15px" height="15px"/>羽毛球</div>
+					<div class="life11">买好一点的球，其实算起来成本跟差球差不了多少，但你得到的却是另一种级别的享受。不要所有的羽毛球比赛都看，容易
+					审美疲劳的，选经典的看看就好了。和临到打球，防水的艺术跟球技的提高同样是门学问。</div>
+					<div class="life10"></div>
+				</div>
+			</div>
+			<div>
+				<div class="life7"><img src="img/跑步.jpg" width="200px" height="150px"/></div>
+				<div class="life8">
+					<div class="life12">跑步<img src="img/左三角形.png" width="15px" height="15px"/></div>
+					<div class="life11"></div>
+					<div class="life10">能坚持跑步的人，至少有个好身体。最好的跑步状态不是跑的快，而是强大的意志力。对一个跑者最好的称赞不是快，而是坚强
+					。长期跑步有伤害吗？有，会伤害你的同龄人。是生活中的跑步，而不是跑步中有生活。</div>
+				</div>
+			</div>
+			
+		</div>
+		<div  class="foot1">
+			<div class="foot3">WORKS<br /><font size="2px">PHONE:18383060925 <br />TEL:1774334563 <br />
+			版权必究，翻版我来收拾你，铁子！
+			</font></div>
+			<div class="foot2">CONTACT ME <br><font size="2px">TEL:1774334563<br />E-MAIL:yangliu@163.com</font></div>
+			<div  class="foot2"> </font>OTHER<br /><font size="2px">ADDRESS:四川省宜宾市四川轻化工大学<br />TEL:1774334563</font></div>
+		    <div class="foot2"><img src="img/你真棒，小老舔！.png" width="60px" height="60px"/></div>
+		</div>
+	</body>
+</html>

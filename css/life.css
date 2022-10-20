@@ -1,0 +1,227 @@
+*{
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+				list-style: none;
+			}
+			
+		#tou1{
+			width: 100%;
+			height: 350px;
+			background: url("../img/风景照.jpg");
+			background-size: 100% 100%;
+		}
+		#tou2{
+			margin-left: 400px;
+			padding-top: 70px;
+			color: white;
+		}
+		#tou3{
+			margin-top: 30px;
+			width: 180px;
+			height: 30px;
+			border: 1px solid orange;
+			text-align: center;
+			line-height: 25px;
+		}
+	    #banner{
+			margin: 0 auto;
+			width: 800px;
+			height: 570px;
+			/* border: 2px solid #999; */
+			overflow: hidden;
+			position: relative;
+		}
+		#imglist{
+			width: 3200px;
+			height: 570px;
+		}
+		#imglist img{
+			width: 800px;
+			height: 570px;
+		}
+		#imglist li{
+			float: left;
+		}
+		.prev{
+			background: #666;
+			width: 30px;
+			height: 40px;
+			color: #fff;
+			text-align: center;
+			line-height: 40px;
+			position: absolute;
+			left: 5px;
+			top: 45%;
+		}
+		.next{
+			background: #666;
+			width: 30px;
+			height: 40px;
+			color: #fff;
+			text-align: center;
+			line-height: 40px;
+			position: absolute;
+			right: 5px;
+			top: 45%;
+			cursor: pointer;
+		}
+		#icolist{
+			position: absolute;
+			right: 10px;
+			
+			bottom: 10px;
+		}
+		#icolist li{
+			width: 30px;
+			height: 30px;
+			border-radius:50% ;
+			background: #666;
+			text-align: center;
+			line-height: 30px;
+			color: #fff;
+			float: left;
+			margin-left: 5px;
+			cursor: pointer;
+		}
+		.life1{
+			width: 800px;
+			height: 500px;
+			margin: 0 auto;
+			background-color: white;
+			background: url("../img/life.png");
+			color: white;
+		}
+		.life2{
+			padding-top: 10px;
+			text-align: center;
+		}
+		.life3{
+			width: 450px;
+			height: 2px;
+			margin: 0 auto;
+			background-color: black;
+		}
+		.parent{
+			width: 800px;
+			height: 130px;
+			display: flex;
+			justify-content: space-between;
+			margin-top: 50px;
+			text-align: center;
+			}
+		
+		.parent div{
+			
+			margin: 0 auto;
+			box-shadow: 0px 0px 5px 5px gray;
+			
+		}
+		.tu1{
+			transition: all 0.4s ease-in-out;
+			-webkit-transition: all 0.4s ease-in-out;
+			-moz-transition: all 0.4s ease-in-out;
+			-o-transition: all 0.4s ease-in-out;
+		}
+		.tu2{
+			transition: all 0.4s ease-in-out;
+			-webkit-transition: all 0.4s ease-in-out;
+			-moz-transition: all 0.4s ease-in-out;
+			-o-transition: all 0.4s ease-in-out;
+		}
+		.tu2:hover{
+			transform: translate(0,-10px);
+			-webkit-transform: translate(0,-10px);
+			-moz-transform: translate(0,-10px);
+			-o-transform: translate(0,-10px);
+			-ms-transform: translate(0,-10px);
+		}
+		.tu1:hover{
+			transform: scale(1.2);
+			-webkit-transform: scale(1.2);
+			-moz-transform: scale(1.2);
+			-o-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+		}
+		
+		.parentbjtp{
+			
+			width: 800px;
+			height: 400px;
+		}
+	
+		
+		.life4{
+			width: 800px;
+			height: 600px;
+			margin: 0 auto;
+			
+		}
+		.life5{
+			float: left;
+			width: 200px;
+			height: 150px;
+			
+			
+		}
+		.life6{
+			float: right;
+			width: 600px;
+			height: 150px;
+			
+		}
+		.life7{
+			float: right;
+			width: 200px;
+			height: 150px;
+			
+		}
+		.life8{
+			float: left;
+			width: 600px;
+			height: 150px;
+			
+		}
+		.life9{
+			width: 100%;
+			height: 30px;
+			
+		}
+		
+		.life10{
+			width: 100%;
+			height:119px;
+		}
+		.life11{
+			width: 100%;
+			height: 1px;
+			background-color: #999;
+		}
+		.life12{
+			
+				width: 100%;
+				height: 30px;
+				
+			text-align: right;
+		}
+		.foot1{
+			width: 100%;
+			height: 100px;
+			background-color: black;
+			position: absolute;
+			float: left;
+			margin-top: 100px;
+			color: white;
+			
+			
+		}
+		.foot3{
+			margin-top: 10px;
+			float: left;
+			margin-left: 260px;
+		}
+		.foot2{
+			margin-top: 10px;
+			float: left;
+			margin-left: 100px;
+		}
